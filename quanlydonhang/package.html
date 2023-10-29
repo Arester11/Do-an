@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body onload="render()">
+    <div class="mainpage">
+        <div class="header">
+            <nav class="header-body grid">
+                <div class="header__logo">
+                    <span> <img class="header__logo-img" src="./assets/img/cube2.png" alt="logo-img"> </span>
+                    <div class="header__logo--strong-text">THE RUBIK SHOP</div>
+                </div>
+
+                <div class="header__home">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div class="header__search">
+                    <div class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input oninput="searchorder()" id="search" class="header__search-input" placeholder="Search here...">
+                    <div class="search-recommend"></div>
+                    <div class="search-layout"></div>
+                </div>
+
+                
+                <div class="header__cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <div class="header__logging">
+                    <div class="header__logging--log-in">
+                        <div" class="header__logging--link">Log in</a>
+                    </div>
+                    <div class="header__logging--separation"></div>
+                    <div class="header__logging--sign-up">
+                        <div class="header__logging--link">Sign up</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div>
+                <div class="porder">Purchased Order</div>
+                <div class="main" id="main">
+                </div>
+            </div>
+            <div class="tablecontainer">
+                <table id="order">
+                </table>
+            </div>
+        </div>
+
+        <div id="notice" class="notice"></div>
+        
+    </div>
+
+    <script src="./js/add.js"></script>
+    <script src="./js/delete.js"></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="https://kit.fontawesome.com/c74c07185f.js" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="footer">credit</div>
+</footer>
+
+</html>
